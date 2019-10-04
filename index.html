@@ -1,0 +1,395 @@
+<!DocType html>
+<html lang="en">
+    <head>
+        <title> StarrApp - Tour places around the world from the comfort of your home. </title>
+        <meta charset="utf-8" />
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        <link rel="icon" href="images/logo.ico" />
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top z-depth-3">
+            <div class="container">
+                <a href="index.html" class="appLogo" title="Starr App"> 
+                    <img class="img-fluid" src="images/logo.ico" alt="Starr Apps" style="height: 30px;" />
+                    Starr Apps
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#openNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="openNav">
+                    <ul class="navbar-nav ml-auto" style="color: red; font-size: 1em;">
+                        <li class="active">
+                            <a href="index.html"><i class="fa fa-home"></i> Home </a>
+                        </li>
+                        <li>
+                            <a href="hotlist.html"><i class="fa fa-fire"></i> My Hotlist </a>
+                        </li>
+                        <li>
+                            <a href="contact.html"><i class="fa fa-phone"></i> Contact Us </a>
+                        </li>
+                        <li class="signup">
+                            <a href="signup.html"><i class="fa fa-universal-access"></i> Sign Up </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="page-banner" class="z-depth-3">
+            <div class="darken-section"></div>
+            <div class="banner-caption">
+                <h1 class="mb-4"> Your Next Tour At Your Fingertips... </h1>
+                <h6> Start now to tour interesting places around the world from the comfort of your home </h6>
+            </div>
+        </section>
+        <section id="search" class="d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="tour-search z-depth-3">
+                            <div class="form-group">
+                                <label for="current-location"> Current Location </label>
+                                <input type="search" class="form-control" placeholder="e.g: Abuja National Mosque" />
+                                <a href="" class="form-text small text-muted"><i class="fa fa-map-marker"></i>  Tour with map </a>
+                            </div>
+                            <div class="form-group">
+                                <label for="current-location"> Tour Destination </label>
+                                <input type="search" class="form-control" placeholder="e.g: Zuma Rock" />
+                            </div>
+                            <div class="form-group">
+                                <label for="current-location"> Filter Places </label>
+                                <select class="form-control">
+                                    <option disabled selected> Select a category </optgroup>
+                                    <option> Museums </option>
+                                    <option> Hotels </option>
+                                    <option> Malls & Supermarket </option>
+                                    <option> Rocks </option>
+                                    <option> Beach & Rivers  </option>
+                                    <option> Schools </option>
+                                    <option> Airports </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button class="btn btn-start-tour btn-block btn-start-tour"> Start Tour <i class="fa fa-plane"></i> </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="top-visited">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 section-title">
+                        <h3><i class="fa fa-trophy"></i> Top Visited Places </h3>
+                        <a href="view-all.html" class="small"> View All <i class="fa fa-eye"></i> </a>
+                    </div>
+                </div>
+                <div class="place-row">
+                    <div>
+                        <div class="place-img">
+                            <img class="img-fluid" src="images/zuma-rock.jpg" alt="Zuma Rock" />
+                        </div>
+                        <div class="place-title-btn">
+                            <div class="place-title">
+                                <h6> Zuma Rock Abuja </h6>
+                                <span> 
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                </span>
+                            </div>
+                            <a href="view-place.html" class="btn btn-sm"> Start Tour <i class="fa fa-plane"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="place-img">
+                            <img class="img-fluid" src="images/museum.png" alt="Jos Museum" />
+                        </div>
+                        <div class="place-title-btn">
+                            <div class="place-title">
+                                <h6> International Museum </h6>
+                                <span> 
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                            <a href="view-place.html" class="btn btn-sm"> Start Tour <i class="fa fa-plane"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="place-img">
+                            <img class="img-fluid" src="images/beach.jpg" alt="Benin Beach" />
+                        </div>
+                        <div class="place-title-btn">
+                            <div class="place-title">
+                                <h6> Benin Beach </h6>
+                                <span> 
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                </span>
+                            </div>
+                            <a href="view-place.html" class="btn btn-sm"> Start Tour <i class="fa fa-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="recommended-places">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 section-title">
+                        <h3><i class="fa fa-flag-checkered"></i> Recommended Places </h3>
+                        <a href="view-all.html" class="small"> View All <i class="fa fa-eye"></i> </a>
+                    </div>
+                </div>
+                <div class="place-row">
+                    <div>
+                        <div class="place-img">
+                            <img class="img-fluid" src="images/zuma-rock.jpg" alt="Zuma Rock" />
+                        </div>
+                        <div class="place-title-btn">
+                            <div class="place-title">
+                                <h6> Zuma Rock Abuja </h6>
+                                <span> 
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                </span>
+                            </div>
+                            <a href="view-place.html" class="btn btn-sm"> Start Tour <i class="fa fa-plane"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="place-img">
+                            <img class="img-fluid" src="images/museum.png" alt="Jos Museum" />
+                        </div>
+                        <div class="place-title-btn">
+                            <div class="place-title">
+                                <h6> International Museum </h6>
+                                <span> 
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                </span>
+                            </div>
+                            <a href="view-place.html" class="btn btn-sm"> Start Tour <i class="fa fa-plane"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="place-img">
+                            <img class="img-fluid" src="images/beach.jpg" alt="Benin Beach" />
+                        </div>
+                        <div class="place-title-btn">
+                            <div class="place-title">
+                                <h6> Benin Beach </h6>
+                                <span> 
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                </span>
+                            </div>
+                            <a href="view-place.html" class="btn btn-sm"> Start Tour <i class="fa fa-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="recommended-places">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 section-title">
+                        <h3><i class="fa fa-fire"></i>  My Hotlist Places </h3>
+                        <a href="view-all.html" class="small"> View All <i class="fa fa-eye"></i> </a>
+                    </div>
+                </div>
+                <div class="place-row">
+                    <div>
+                        <div class="place-img">
+                            <img class="img-fluid" src="images/zuma-rock.jpg" alt="Zuma Rock" />
+                        </div>
+                        <div class="place-title-btn">
+                            <div class="place-title">
+                                <h6> Zuma Rock Abuja </h6>
+                                <span> 
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                </span>
+                            </div>
+                            <a href="view-place.html" class="btn btn-sm"> Start Tour <i class="fa fa-plane"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="place-img">
+                            <img class="img-fluid" src="images/museum.png" alt="Jos Museum" />
+                        </div>
+                        <div class="place-title-btn">
+                            <div class="place-title">
+                                <h6> International Museum </h6>
+                                <span> 
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                            <a href="view-place.html" class="btn btn-sm"> Start Tour <i class="fa fa-plane"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="place-img">
+                            <img class="img-fluid" src="images/beach.jpg" alt="Benin Beach" />
+                        </div>
+                        <div class="place-title-btn">
+                            <div class="place-title">
+                                <h6> Benin Beach </h6>
+                                <span> 
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                </span>
+                            </div>
+                            <a href="view-place.html" class="btn btn-sm"> Start Tour <i class="fa fa-plane"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletters-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 offset-md-1 pr-md-5 newsletter">
+                        <h6 class="mb-4"> 
+                            Be the first to recieve new offers and deals.
+                        </h6>
+                        <form>
+                            <div class="form-group">
+                                <label for="sub-firstname"> First Name </label>
+                                <input type="text" class="form-control" id="sub-firstname">
+                            </div>
+                            <div class="form-group">
+                                <label for="sub-email"> Email Address </label>
+                                <input type="text" class="form-control" id="sub-email">
+                            </div>
+                            <div class="form-group mb-5 mb-md-3">
+                                <button class="btn btn-block btn-dark"><i class="fa fa-bullhorn"></i> Subscribe Today </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5 contact-info text-center">
+                        <div class="row">
+                            <h6 class="col-12 mb-5"> Visit or contact us directly for tour enquiries </h6>
+                            <div class="col">
+                                <i class="fa fa-phone"></i>
+                                <h6> 08056341209, 09056781425 </h6>
+                            </div>
+                            <div class="col">
+                                <i class="fa fa-envelope-o"></i>
+                                <h6> tour@starrapp.com, enquiry@starrapp.com </h6>
+                            </div>
+                            <div class="col">
+                                <i class="fa fa-map-marker"></i>
+                                <h6> 12 Cresent Avenue Miatama, Abuja </h6>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <a href="" class="btn btn-book-tour btn-dark"><i class="fa fa-plane"></i> Book a Tour </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3 mb-5 mb-md-3">
+                        <h5> About Starr App </h5>
+                        <ul>
+                            <li><a href=""> Home </a></li>
+                            <li><a href=""> My Hotlist </a></li>
+                            <li><a href=""> Contact Us </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 mb-5 mb-md-3">
+                        <h5> Improve Tour Experience </h5>
+                        <ul>
+                            <li><a href=""> Home </a></li>
+                            <li><a href=""> My Hotlist </a></li>
+                            <li><a href=""> Contact Us </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 mb-5 mb-md-3">
+                        <h5> Tour Information </h5>
+                        <ul>
+                            <li><a href=""> Home </a></li>
+                            <li><a href=""> My Hotlist </a></li>
+                            <li><a href=""> Contact Us </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 mb-5 mb-md-3">
+                        <div class="socials mb-4">
+                            <h5> Social Media </h5>
+                            <a href="" class="fa fa-facebook-square"></a>
+                            <a href="" class="fa fa-instagram"></a>
+                            <a href="" class="fa fa-twitter-square"></a>
+                            <a href="" class="fa fa-youtube-square"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="second-footer">
+                    <div class="col-md-8 mb-5 mb-md-3">
+                        <div class="about-starApp z-depth-3">
+                            <a href="index.html" class="appLogo" title="Starr App"> 
+                                <img class="img-fluid" src="images/logo.ico" alt="Starr Apps" style="height: 30px;" />
+                                Starr Apps
+                            </a>
+                            <p class="mt-3">
+                                Find and tour interesting places around the world from the comfort of your home or office.
+                            </p>
+                            <p>
+                                If you're a tour operator looking to increase your reach, connecting to our platform will let you share your travel packages with millions of global travels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 offset-md-1 text-center text-md-left">
+                        <div class="payments mb-4">
+                            <h5> Download Our Mobile  </h5>
+                            <div class="row">
+                                <a href="" class="col-6">
+                                    <img class="img-fluid" src="images/playstore.png">
+                                </a>
+                                <a href="" class="col-6">
+                                    <img class="img-fluid" src="images/applestore.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="small">
+                            Copyright &copy Starr App 2019. Terms and conditions applies
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>

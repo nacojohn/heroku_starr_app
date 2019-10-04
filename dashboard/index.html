@@ -1,0 +1,145 @@
+<!DocType html>
+<html lang="en">
+    <head>
+        <title> StarrApp - Admin Dashboard </title>
+        <meta charset="utf-8" />
+        
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+        
+        <link rel="icon" href="../images/logo.ico" />
+
+    </head>
+    <body>
+    	<div class="dashboard-container">
+	    	<aside class="d-none d-md-block">
+	    		<div class="logo">
+	    			<img src="../images/logo.ico">
+	    			Starr Apps 
+	    		</div>
+	    		<div class="category">
+	    			<a href="/index.html"><i class="fa fa-globe"></i> Website </a>
+	    			<a href="index.html"><i class="fa fa-dashboard"></i> Dashboard </a>
+	    		</div>
+	    		<h6 class="username"> Ndubuisi Agbarondu </h6>
+	    		<ul>
+	    			<li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Overview </a></li>
+	    			<li><a href="view-places.html"><i class="fa fa-map-marker"></i> Manage Places </a></li>
+	    			<li><a href="view-users.html"><i class="fa fa-user"></i> Manage Users </a></li>
+                    <li><a href="view-transactions.html"><i class="fa fa-user"></i> Manage Transactions </a></li>
+	    			<li><a href="view-categories.html"><i class="fa fa-archive"></i> Manage Categories </a></li>
+	    			<li><a href="view-accounts.html"><i class="fa fa-key"></i> Manage Accounts </a></li>
+	    			<li><a href="logout.html"><i class="fa fa-lock"></i> Logout </a></li>
+	    		</ul>
+	    	</aside>
+	    	<main>
+	    		<nav class="flex"> 
+	    			<a class="btn btn-sidebar-toggle navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <i class="fa fa-align-left"></i>
+                    </a>
+                    <div class="d-md-none collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mobile-menu">
+                            <li class="nav-item active">
+                                <a href="index.html" class="nav-link">
+                                    <i class="fa fa-dashboard"></i> Overview 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="view-places.html" class="nav-link">
+                                    <i class="fa fa-map-marker"></i> Manage Places 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="view-users.html" class="nav-link">
+                                    <i class="fa fa-user"></i> Manage Users 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="view-transactions.html" class="nav-link">
+                                    <i class="fa fa-user"></i> Manage Transactions 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="view-categories.html" class="nav-link">
+                                    <i class="fa fa-archive"></i> Manage Categories 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="view-accounts.html" class="nav-link">
+                                    <i class="fa fa-key"></i> Manage Accounts 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="logout.html" class="nav-link">
+                                    <i class="fa fa-lock"></i> Logout 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="ml-auto d-none d-md-block">
+                        <li><a href="logout.html"> Logout </a></li>
+                    </ul>
+	    		</nav>
+    			<div class="username-logout-row">
+    				<h5><i class="fa fa-dashboard"></i> Dashboard Overview </h5>
+    			</div>
+    			<div class="content col-12">
+    				<div class="row">
+    					<div class="col-md-4"> 
+                            <div class="overview-usercounter-box">
+                                <div class="header"> 
+                                    <h6 class="text-light text-center mb-4"> Active Users </h6>
+                                    <div class="counter"> 
+                                        <h4> 516 </h4>
+                                        <p> Users Registered </p>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <a href="view-users.html" class="btn btn-block">
+                                        <i class="fa fa-users"></i> View Users 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"> 
+                            <div class="overview-usercounter-box">
+                                <div class="header mid"> 
+                                    <h6 class="text-light text-center mb-4"> Tours & Visits </h6>
+                                    <div class="counter"> 
+                                        <h4> 3129 </h4>
+                                        <p> Places Toured </p>
+                                    </div>
+                                </div>
+                                <div class="body mid">
+                                    <a href="view-places.html" class="btn btn-block">
+                                        <i class="fa fa-map-marker"></i> View Tour History 
+                                    </a>
+                                </div>                            
+                            </div>
+                        </div>
+    					<div class="col-md-4"> 
+    						<div class="overview-usercounter-box">
+    							<div class="header"> 
+    								<h6 class="text-light text-center mb-4"> Financials </h6>
+    								<div class="counter"> 
+    									<h4> 5,000,300 </h4>
+    									<p> Payments Made </p>
+    								</div>
+    							</div>
+                                <div class="body">
+                                    <a href="view-transactions.html" class="btn btn-block"> 
+                                        <i class="fa fa-money"></i> View Transactions 
+                                    </a>
+                                </div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>	    	
+    		</main>
+	    </div>
+
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

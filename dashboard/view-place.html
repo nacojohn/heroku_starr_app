@@ -1,0 +1,321 @@
+<!DocType html>
+<html lang="en">
+    <head>
+        <title> StarrApp - Admin Dashboard </title>
+        <meta charset="utf-8" />
+        
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+        
+        <link rel="icon" href="../images/logo.ico" />
+
+        <style type="text/css">
+            input, select, textarea {
+                background-color: #E8F0FE !important;
+                color: #111111;
+            }
+        </style>
+    </head>
+    <body>
+    	<div class="dashboard-container">
+	    	<aside class="d-none d-md-block">
+	    		<div class="logo">
+	    			<img src="../images/logo.ico">
+	    			Starr Apps 
+	    		</div>
+	    		<div class="category">
+	    			<a href="/index.html"><i class="fa fa-globe"></i> Website </a>
+	    			<a href="index.html"><i class="fa fa-dashboard"></i> Dashboard </a>
+	    		</div>
+	    		<h6 class="username"> Ndubuisi Agbarondu </h6>
+	    		<ul>
+                    <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Overview </a></li>
+                    <li><a href="view-places.html"><i class="fa fa-map-marker"></i> Manage Places </a></li>
+                    <li><a href="view-users.html"><i class="fa fa-user"></i> Manage Users </a></li>
+                    <li><a href="view-categories.html"><i class="fa fa-archive"></i> Manage Categories </a></li>
+                    <li><a href="view-accounts.html"><i class="fa fa-key"></i> Manage Accounts </a></li>
+                    <li><a href="logout.html"><i class="fa fa-lock"></i> Logout </a></li>
+                </ul>
+	    	</aside>
+	    	<main>
+	    		<nav class="flex"> 
+                    <a class="btn btn-sidebar-toggle navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <i class="fa fa-align-left"></i>
+                    </a>
+                    <div class="d-md-none collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mobile-menu">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">
+                                    <i class="fa fa-dashboard"></i> Overview 
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="view-places.html" class="nav-link">
+                                    <i class="fa fa-map-marker"></i> Manage Places 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="view-users.html" class="nav-link">
+                                    <i class="fa fa-user"></i> Manage Users 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="view-transactions.html" class="nav-link">
+                                    <i class="fa fa-user"></i> Manage Transactions 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="view-categories.html" class="nav-link">
+                                    <i class="fa fa-archive"></i> Manage Categories 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="view-accounts.html" class="nav-link">
+                                    <i class="fa fa-key"></i> Manage Accounts 
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="logout.html" class="nav-link">
+                                    <i class="fa fa-lock"></i> Logout 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="ml-auto d-none d-md-block">
+                        <li><a href="logout.html"> Logout </a></li>
+                    </ul>
+                </nav>
+    			<div class="username-logout-row">
+    				<h5><i class="fa fa-eye"></i> Viewing A Location </h5>
+    				<a href="" class="btn btn-template float-right"> Click to Edit </a>
+    			</div>
+    			<div class="content col-12">
+    				<div class="row">
+    					<div class="col-md mb-5">
+                            <h5> Basic Info </h5>
+                            <hr class="short-title-line">
+                            <div class="form-group">
+                                <label for="name-place"> Name of Place </label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Category </label>
+                                <select class="form-control">
+                                    <option> Hotel/Accomodation </option>
+                                    <option> Resturant/Food </option>
+                                    <option> Business </option>
+                                    <option> Pubs </option>
+                                    <option> Shops </option>
+                                    <option> Tourist </option>
+                                    <option> Shop </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Price of Entry </label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Description </label>
+                                <textarea rows="5" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> History </label>
+                                <textarea rows="5" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md border-left-md mb-5">
+                            <h5> Contact Info </h5>
+                            <hr class="short-title-line">
+                            <div class="form-group">
+                                <label for="name-place"> Address 1 </label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Address 2 </label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block" for="name-place"> Longitude & Latitude </label>
+                                <input type="text" class="form-control float-left w-50 mb-4" />
+                                <input type="text" class="form-control float-left w-50 mb-4" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> City/Province </label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Email Address </label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Phone Number 1 </label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Phone Number 2 </label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Website </label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Facebook </label>
+                                <input type="text" class="form-control" placeholder="https://facebook.com/usersname" />
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Instagram </label>
+                                <input type="text" class="form-control" placeholder="https://facebook.com/usersname" />
+                            </div>
+                        </div>
+                        <div class="col-md-5 border-left-md mb-5">
+                            <h5> Opening Days/Time Info </h5>
+                            <hr class="short-title-line">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="text-muted"><b> Monday </b></div>
+                                    <hr class="short-title-line muted">
+                                    <div class="flex">
+                                        <div class="w-48">
+                                            <small>Opening</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                        <div class="w-48">
+                                            <small>Closing</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="text-muted"><b> Tuesday </b></div>
+                                    <hr class="short-title-line muted">
+                                    <div class="flex">
+                                        <div class="w-48">
+                                            <small>Opening</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                        <div class="w-48">
+                                            <small>Closing</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="text-muted"><b> Wednesday </b></div>
+                                    <hr class="short-title-line muted">
+                                    <div class="flex">
+                                        <div class="w-48">
+                                            <small>Opening</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                        <div class="w-48">
+                                            <small>Closing</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="text-muted"><b> Thursday </b></div>
+                                    <hr class="short-title-line muted">
+                                    <div class="flex">
+                                        <div class="w-48">
+                                            <small>Opening</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                        <div class="w-48">
+                                            <small>Closing</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="text-muted"><b> Friday </b></div>
+                                    <hr class="short-title-line muted">
+                                    <div class="flex">
+                                        <div class="w-48">
+                                            <small>Opening</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                        <div class="w-48">
+                                            <small>Closing</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="text-muted"><b> Saturday </b></div>
+                                    <hr class="short-title-line muted">
+                                    <div class="flex">
+                                        <div class="w-48">
+                                            <small>Opening</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                        <div class="w-48">
+                                            <small>Closing</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="text-muted"><b> Sunday </b></div>
+                                    <hr class="short-title-line muted">
+                                    <div class="flex">
+                                        <div class="w-48">
+                                            <small>Opening</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                        <div class="w-48">
+                                            <small>Closing</small>
+                                            <input type="time" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="mt-4"> Resource Info </h5>
+                            <hr class="short-title-line">
+                            <div class="form-group flex">
+                                <div class="w-48">
+                                    <label for="name-place"> Picture 1 </label>
+                                    <input type="file" class="form-control" />
+                                </div>
+                                <div class="w-48">
+                                    <label for="name-place"> Title  </label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group flex">
+                                <div class="w-48">
+                                    <label for="name-place"> Picture 1 </label>
+                                    <input type="file" class="form-control" />
+                                </div>
+                                <div class="w-48">
+                                    <label for="name-place"> Title  </label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group flex">
+                                <div class="w-48">
+                                    <label for="name-place"> Picture 1 </label>
+                                    <input type="file" class="form-control" />
+                                </div>
+                                <div class="w-48">
+                                    <label for="name-place"> Title  </label>
+                                    <input type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name-place"> Youtube Video URL </label>
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+    				</div>
+    			</div>	    	
+    		</main>
+	    </div>
+
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>
